@@ -1,0 +1,14 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+h2, h3 {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.container {
+	width: 70%;
+	margin: 0 auto;
+}
+
