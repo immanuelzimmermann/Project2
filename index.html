@@ -5,90 +5,87 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Responsive Layout</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
-
-	<header id="top">
-		
-		<div class="main-nav">
-			<p>Immanuel Zimmermann</p>
-			<nav>
-				<ul>
-					<li>Home</li>
-					<li>Portfolio</li>
-					<li>Contact</li>
-				</ul>
-			</nav>
+	<header>
+		<div class="container" id="top">
+			<div class="main-header">
+				<h2 class="name"><a href="#">Immanuel Zimmermann</a></h2>
+				<nav>
+					<ul class="main-nav">
+						<li><a href="#">Home</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="profile">
+				<img src="img/responsive-layout-profile.png">
+				<p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+			</div>
 		</div>
-		
-		<div>
-			<img src="img/responsive-layout-profile.png">
-			<p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
-		</div>
-
 	</header>
 
 	<main>
-
-		<h3>Portfolio</h3>
-
-		<div>
-			<img src="img/portfolio-1.png">
-			<h2>Marketing Page</h2>
-			<p>This project show the front page of marketing website meant for a specific business I'm interested in.</p>
+		<div class="container" id="portfolio">
+			<h3>Portfolio</h3>
+			<div class="main-content">
+				<div class="content-box">
+					<img src="img/portfolio-1.png">
+					<h2>Marketing Page</h2>
+					<p>This project show the front page of marketing website meant for a specific business I'm interested in.</p>
+				</div>
+				<div class="content-box">
+					<img src="img/portfolio-2.png">
+					<h2>Search Page</h2>
+					<p>This project searches through a specific database to find information that the user is trying to look up.</p>
+				</div>
+				<div class="content-box">
+					<img src="img/portfolio-3.png">
+					<h2>Travel App</h2>
+					<p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+				</div>
+				<div class="content-box">
+					<img src="img/portfolio-4.png">
+					<h2>Map of Favorite Spots</h2>
+					<p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+				</div>
+				<div class="content-box">
+					<img src="img/portfolio-5.png">
+					<h2>Photo Gallery</h2>
+					<p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+				</div>
+				<div class="content-box">
+					<img src="img/portfolio-6.png">
+					<h2>Calculator</h2>
+					<p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+				</div>
+			</div>
 		</div>
-
-		<div>
-			<img src="img/portfolio-2.png">
-			<h2>Search Page</h2>
-			<p>This project searches through a specific database to find information that the user is trying to look up.</p>
+		<div class="contact">
+			<div class="container">
+				<h3>Contact</h3>
+				<p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+				<li>Phone<a href="tel:+1(123)456-7890">+1 (123) 456-7890</a></li>
+				<li>Email<a href="mailto:email@yoursite.com">email@yoursite.com</a></li>
+			</div>
 		</div>
-
-		<div>
-			<img src="img/portfolio-3.png">
-			<h2>Travel App</h2>
-			<p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-		</div>
-
-		<div>
-			<img src="img/portfolio-4.png">
-			<h2>Map of Favorite Spots</h2>
-			<p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-		</div>
-
-		<div>
-			<img src="img/portfolio-5.png">
-			<h2>Photo Gallery</h2>
-			<p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-		</div>
-
-		<div>
-			<img src="img/portfolio-6.png">
-			<h2>Calculator</h2>
-			<p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
-		</div>
-
-		<div>
-			<h3>Contact</h3>
-			<p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-			<li>Phone<span>+1 (111) 555-1234</span></li>
-			<li>Email<span>email@yoursite.com</span></li>
-		</div>
-
 	</main>
 
 	<footer>
-		<li>Immanuel</li>
-		<nav>
-		<ul>
-			<li>Home</li>
-			<li>Portfolio</li>
-			<li>Contact</li>
-		</ul>
-		</nav>
-		<li><a href="#top">Back to top</a></li>
+		<div class="main-footer container" id="contact">
+			<li class="footer-name">Immanuel</li>
+				<nav class="footer-nav">
+				<ul>
+					<li><a href="#top">Home</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+				</nav>
+			<li class="back-top"><a href="#top">Back to top</a></li>
+		</div>
 	</footer>
-
 </body>
 </html>
