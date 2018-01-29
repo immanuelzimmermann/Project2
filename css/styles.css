@@ -90,11 +90,12 @@ main .container {
 	text-transform: uppercase;
 }
 
-.contact li {
+.contact span {
 	margin: 1em;
+	display: block;
 }
 
-.contact li a {
+.contact span a {
 	margin: auto 2em;
 }
 
@@ -116,7 +117,7 @@ footer {
 	float: right;
 }
 
-.main-footer li {
+.main-footer li, span {
 	text-transform: uppercase;
 	padding: 1em;
 	display: inline-block;
